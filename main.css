@@ -1,50 +1,61 @@
 body {
-  margin: 0 0 0 0;
+  margin: 0;
+  padding: 0;
 }
 
 #land {
   background-image: url(hills.svg);
   margin: 0 0 0 0;
+  padding: 10px 0 0 0;
   background-size: 100%;
   background-repeat: no-repeat;
-  /*
-  background-position: 0%;
-  */
+}
+
+#land div {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  margin: 0px;
+  outline: none;
+  vertical-align: top;
 }
 
 #grass {
   background-image: url(grass.svg);
   background-size: 100%;
-  margin: 0 0 0 0;
-  padding: 100px 0 0 0;
-  background-repeat: no-repeat;
-  /*
-  background-position: 0%;
+  position: relative;
   width: 100%;
-  height: 100%;
-  */
+  background-repeat: no-repeat;
+}
+#grass:before {
+  content: "";
+  display: block;
+  padding-top:10%;
 }
 
-#logo {
-  background-image: url(logo.svg);
-  background-size: 100%;
-  background-position: 0%;
-  background-repeat: no-repeat;
-  width: 30%;
-  height: 30%;
-  position: relative;
-  margin: 0 auto;
+#moregrass {
+  background-color: #476a10;
+  width: 100%;
 }
 
 #text {
-  font-family: 'Vegur Regular';
+  font-family: 'Vegur Regular', 'Myriad Pro', 'Myriad Web Pro', 'Gill Sans',
+    'Gill Sans MT', Calibri, sans-serif;
   font-size: 1.1rem;
   color: #DDD;
   text-align: center;
   padding: 0 2rem 2rem 2rem;
 }
 
-#moregrass {
-  background-color: #476a10;
-  margin: 0 0 0 0;
+#logo {
+  background-image: url(logo.svg);
+  background-size: 256px;
+  background-position: 0%;
+  background-repeat: no-repeat;
+  width: 256px;
+  height: 200px;
+  position: relative;
+  margin: 0 auto;
 }
+
+
