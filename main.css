@@ -1,6 +1,12 @@
 body {
+  background-color: #476a10;
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+#sky {
+  background-color: #FFF;
 }
 
 #land {
